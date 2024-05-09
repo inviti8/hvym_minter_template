@@ -1,0 +1,40 @@
+{
+  "canisters": {
+    "proprium_minter_backend": {
+      "main": "src/proprium_minter_backend/main.mo",
+      "type": "motoko"
+    },
+    "proprium_minter_frontend": {
+      "dependencies": [
+        "proprium_minter_backend",
+        "internet_identity"
+      ],
+      "frontend": {
+        "entrypoint": "src/proprium_minter_frontend/src/index.html"
+      },
+      "source": [
+        "src/proprium_minter_frontend/assets",
+        "dist/proprium_minter_frontend/"
+      ],
+      "type": "assets"
+    },
+    "internet_identity": {
+      "type": "custom",
+      "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz",
+      "remote": {
+        "id": {
+          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+        }
+      },
+      "frontend": {}
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
