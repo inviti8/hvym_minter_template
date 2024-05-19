@@ -47,6 +47,11 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.png$/,
+        loader: 'file-loader',
+        options: {},
+      },
+      {
         test: /\.obj$/,
         use: 'raw-loader',
       },
@@ -77,6 +82,7 @@ module.exports = {
   output: {
     filename: "index.js",
     path: path.join(__dirname, "dist", frontendDirectory),
+    publicPath: '/', // this will be the base path for all resources
   },
 
   // Depending in the language or framework you are using for

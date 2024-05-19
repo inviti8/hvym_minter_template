@@ -33,8 +33,7 @@
     "util": "0.12.4",
     "webpack": "^5.76.0",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.8.1",
-    "@heavymeta/proprium": "^0.0.3"
+    "webpack-dev-server": "^4.8.1"
   },
   "engines": {
     "node": "^12 || ^14 || ^16 || ^18"
@@ -44,5 +43,9 @@
     "last 2 firefox version",
     "last 2 safari version",
     "last 2 edge version"
-  ]
+  ],
+  "dependencies": {
+    "@heavymeta/proprium": "^0.0.3",
+    "file-loader": "^6.2.0"
+  }
 }
