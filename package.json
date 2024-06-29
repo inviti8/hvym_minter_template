@@ -45,7 +45,6 @@
     "last 2 edge version"
   ],
   "dependencies": {
-    "@heavymeta/proprium": "^0.0.3",
     "file-loader": "^6.2.0"
   }
 }
